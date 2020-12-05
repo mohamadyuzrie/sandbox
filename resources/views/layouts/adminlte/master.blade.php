@@ -55,7 +55,6 @@
             </div>
         </div>
 
-        {{-- @yield('modals') --}}
         <footer class="main-footer">
             <div class="float-right d-none d-sm-inline">
                 Version: 1.0.0
@@ -65,6 +64,11 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script>
+        $(function() {
+            @stack('scripts')
+        })
+    </script>
 </body>
 </html>

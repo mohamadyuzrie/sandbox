@@ -12,3 +12,7 @@
     </div>
 </div>
 @endsection
+
+@push('scripts')
+    @include('training.js')
+@endpush
