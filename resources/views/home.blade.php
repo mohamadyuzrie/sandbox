@@ -1,5 +1,4 @@
-{{-- @extends('layouts.adminlte.master') --}}
-@extends('layouts.app')
+@extends('layouts.adminlte.master', ['noBackButton' => true])
 
 @section('content')
 <div class="container">
